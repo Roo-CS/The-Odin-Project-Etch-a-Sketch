@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 500px;
+  width: 500px;
+}
+
+.box{
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-width: 1px;
+}
