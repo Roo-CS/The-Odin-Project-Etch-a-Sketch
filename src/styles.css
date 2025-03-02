@@ -2,11 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: lightgray;
+}
+
+.page-wrapper{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .container{
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box{
