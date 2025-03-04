@@ -34,7 +34,18 @@ function createBox(container, boxSize){
   box.style.height = boxSize;
   box.style.width = boxSize;
   box.addEventListener("mouseover", ()=>{
-    box.style.backgroundColor = "blue";
+    box.style.backgroundColor = generateRandomColor();
   });
   container.appendChild(box);
+}
+
+function generateRandomColor(){
+  let letters = "0123456789ABCDEF";
+  let color = "#"
+
+  for(let i = 0; i < 6; i++){
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  return color;
 }
