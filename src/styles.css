@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: lightgray;
+  background-color: white;
 }
 
 .page-wrapper{
@@ -23,8 +23,6 @@
 }
 
 .box{
-  height: 25px;
-  width: 25px;
   border-style: solid;
   border-width: 1px;
 }
