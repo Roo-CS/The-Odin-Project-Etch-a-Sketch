@@ -7,7 +7,7 @@ function createGrid(){
   let gridSize = input.value;
   let boxSize = getComputedBoxSize(container, gridSize);
 
-  if(gridSize > 1 && grid <= 100){
+  if(gridSize > 1 && gridSize <= 100){
     for(let i = 0; i < gridSize; i++){
       for(let j = 0; j < gridSize; j++){
         let box = document.createElement("div");
