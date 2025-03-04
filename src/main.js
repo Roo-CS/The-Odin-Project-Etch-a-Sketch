@@ -10,14 +10,7 @@ function createGrid(){
   if(gridSize > 1 && gridSize <= 100){
     for(let i = 0; i < gridSize; i++){
       for(let j = 0; j < gridSize; j++){
-        let box = document.createElement("div");
-        box.classList.add("box");
-        box.style.height = boxSize;
-        box.style.width = boxSize;
-        box.addEventListener("mouseover", ()=>{
-          box.style.backgroundColor = "blue";
-        });
-        container.appendChild(box);
+        createBox(container, boxSize);
       }
     }
   }
@@ -33,4 +26,15 @@ function removeGrid(container){
 
 function getComputedBoxSize(container, gridSize){
   return String((parseInt(window.getComputedStyle(container).getPropertyValue("height")) / gridSize) + "px");
+}
+
+function createBox(container, boxSize){
+  let box = document.createElement("div");
+  box.classList.add("box");
+  box.style.height = boxSize;
+  box.style.width = boxSize;
+  box.addEventListener("mouseover", ()=>{
+    box.style.backgroundColor = "blue";
+  });
+  container.appendChild(box);
 }
